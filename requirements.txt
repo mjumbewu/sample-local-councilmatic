@@ -1,0 +1,10 @@
+# ====================
+# The Councilmatic App
+# ====================
+Django>=1.5
+git+git://github.com/codeforamerica/councilmatic.git#egg=councilmatic
+
+# ====================
+# Legistar scraping
+# ====================
+git+git://github.com/fgregg/legistar-scrape.git#egg=legistar-scraper
