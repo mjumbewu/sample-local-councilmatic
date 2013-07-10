@@ -41,3 +41,19 @@ Now you should be able to run the site:
     let this run for a few minutes just to get some data to see in the site.
     For a live site, you'll want to let this run to completion at least once.
 2.  `python website/manage.py update_index`
+
+
+Customizations
+--------------
+
+### Templates
+
+You can overwrite any Councilmatic template in your local instance. To overwrite a template, reconstruct the location of that file in your project folder. For example, to change the way that the home page (dashboard) is layed out, copy the file https://github.com/codeforamerica/councilmatic/blob/master/councilmatic/templates/councilmatic/dashboard.html to websites/councilmatic_customizations/templates/councilmatic/dashboard.html and modify it to your liking. Notice that both files have the path "templates/councilmatic/dashboard.html". Any of the templates in the https://github.com/codeforamerica/councilmatic/blob/master/councilmatic/templates/ folder can be overridden in a similar way, by placing the corresponding copy into the websites/councilmatic_customizations/templates/ folder.
+
+### Styles and Images
+
+You can overwrite any Councilmatic static files much in the same way that you can templates. The css and images for Councilmatic are at https://github.com/codeforamerica/councilmatic/tree/master/councilmatic/static and would be overwritted in the website/councilmatic_customizations/static/ folder.
+
+### Views and Advanced Functionality
+
+Most of the views for Councilmatic are implemented in https://github.com/codeforamerica/councilmatic/blob/master/councilmatic/views.py. If you need to extend the functionality of a view, use the appropriate Councilmatic view as a base class for a new class in website/councilmatic_customizations/views.py. 

@@ -114,7 +114,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'utils.context_processors.site',
 )
 
-ROOT_URLCONF = 'councilmatic.urls'
+ROOT_URLCONF = 'councilmatic_customizations.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or
